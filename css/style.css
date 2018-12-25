@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #29303b;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.myNavBar {
+  border: 1px solid #cacbcc; }
+  .myNavBar .navbar-brand {
+    flex-grow: 1; }
+    .myNavBar .navbar-brand img {
+      width: 110px; }
+  .myNavBar .category {
+    flex-grow: 1;
+    align-self: center; }
+    .myNavBar .category a {
+      color: #505763;
+      font-size: 13px;
+      font-weight: normal;
+      text-decoration: none; }
+  .myNavBar .input_search {
+    flex-grow: 5; }
+    .myNavBar .input_search .form-control {
+      background-color: rgba(20, 23, 28, 0.05);
+      font-size: 13px;
+      padding: 10px 15px;
+      border: none;
+      transition: 0s;
+      -webkit-transition: 0s;
+      -moz-transition: 0s;
+      -ms-transition: 0s;
+      -o-transition: 0s; }
+      .myNavBar .input_search .form-control:focus {
+        box-shadow: none;
+        border-left: 1px solid #cacbcc;
+        border-top: 1px solid #cacbcc;
+        border-bottom: 1px solid #cacbcc; }
+      .myNavBar .input_search .form-control:focus + .input-group-prepend .input-group-text {
+        border-right: 1px solid #cacbcc;
+        border-top: 1px solid #cacbcc;
+        border-bottom: 1px solid #cacbcc; }
+    .myNavBar .input_search .input-group-prepend .input-group-text {
+      color: #ec5252;
+      border: none;
+      background: rgba(20, 23, 28, 0.05); }
+    .myNavBar .input_search .input-group-prepend:hover .input-group-text {
+      background-color: #ec5252;
+      color: #fff; }
+  .myNavBar .navbar-nav .nav-item .nav-link {
+    color: #505763;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 10px 15px; }
+  .myNavBar .navbar-nav .nav-item:hover .nav-link {
+    background-color: rgba(20, 23, 28, 0.05); }
+  .myNavBar .navbar-nav .nav-item:nth-child(3) .nav-link {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; }
+  .myNavBar .navbar-nav .nav-item:last-child .btn--white {
+    color: #686f7a;
+    background-color: #fff;
+    border: 1px solid #29303b;
+    font-size: 13px;
+    font-weight: bold; }
+    .myNavBar .navbar-nav .nav-item:last-child .btn--white:hover {
+      color: #29303b;
+      background-color: #fff; }
+  .myNavBar .navbar-nav .nav-item:last-child .btn--red {
+    color: #fff;
+    background-color: #ec5252;
+    border: 1px solid transparent;
+    font-size: 13px;
+    font-weight: bold; }
+    .myNavBar .navbar-nav .nav-item:last-child .btn--red:hover {
+      color: #fff;
+      background-color: #ec5252; }
+
+.cover {
+  background-image: url("../img/cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding: 150px 0 0 200px; }
+  .cover .cover_content {
+    width: 40%; }
+    .cover .cover_content h1 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 600; }
+    .cover .cover_content p {
+      color: #fff;
+      font-size: 20px -2;
+      font-weight: normal; }
+    .cover .cover_content .input_search .form-control {
+      padding: 10px 15px;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      font-size: 15px;
+      border: none; }
+      .cover .cover_content .input_search .form-control:focus {
+        box-shadow: none; }
+    .cover .cover_content .input_search .input-group-prepend .input-group-text {
+      color: #ec5252;
+      border: none;
+      background-color: #fff; }
+
+.intro {
+  padding: 20px 0;
+  background: linear-gradient(-45deg, #ec5252, #6e1a52); }
+  .intro .icon {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    align-self: center; }
+  .intro .icon_content {
+    align-self: center; }
+    .intro .icon_content p:first-child {
+      color: #fff;
+      font-size: 20px -3;
+      font-weight: bold;
+      margin-bottom: 0px; }
+    .intro .icon_content p:nth-child(2) {
+      color: #fff;
+      font-size: 15px;
+      font-weight: normal;
+      margin-bottom: 0px; }
+
+.courses .courses_title {
+  padding: 100px 0; }
+  .courses .courses_title h1 {
+    color: #29303b;
+    font-size: 36px;
+    font-weight: 600; }
+.courses .myNav {
+  border-bottom: none; }
+  .courses .myNav .nav-item .nav-link {
+    color: #29303b;
+    font-size: 15px;
+    font-weight: normal; }
+    .courses .myNav .nav-item .nav-link:hover {
+      border: none; }
+    .courses .myNav .nav-item .nav-link.active {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 5px solid #007791; }
+.courses .myTabContent {
+  position: relative; }
+  .courses .myTabContent .owl-prev {
+    position: absolute;
+    top: 40%;
+    left: -30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #007791;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    background-color: #fff !important;
+    z-index: 3; }
+    .courses .myTabContent .owl-prev span {
+      color: #007791;
+      font-size: 40px;
+      line-height: 30px; }
+  .courses .myTabContent .owl-next {
+    position: absolute;
+    top: 40%;
+    right: -30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #007791;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    background-color: #fff !important;
+    z-index: 3; }
+    .courses .myTabContent .owl-next span {
+      color: #007791;
+      font-size: 40px;
+      line-height: 30px; }
+  .courses .myTabContent .card .card-title {
+    color: #29303b;
+    font-size: 15px;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -moz-block;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 20px;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    white-space: nowrap; }
+  .courses .myTabContent .card .card-text {
+    color: #686f7a;
+    font-size: 13px;
+    font-weight: normal; }
+  .courses .myTabContent .card .rating i {
+    color: #F4C150;
+    font-size: 13px;
+    font-weight: normal; }
+  .courses .myTabContent .card .rating span:nth-child(6) {
+    color: #686f7a;
+    font-size: 13px;
+    font-weight: bold; }
+  .courses .myTabContent .card .rating span:last-child {
+    color: #686f7a;
+    font-size: 13px;
+    font-weight: bold; }
+  .courses .myTabContent .card p:last-child {
+    margin-bottom: 0; }
+    .courses .myTabContent .card p:last-child span:first-child {
+      color: #686f7a;
+      font-size: 15px;
+      font-weight: normal;
+      text-decoration: line-through; }
+    .courses .myTabContent .card p:last-child span:last-child {
+      color: #29303b;
+      font-size: 15px;
+      font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */

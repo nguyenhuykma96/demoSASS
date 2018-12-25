@@ -1,0 +1,90 @@
+.myNavBar{
+    border: 1px solid $color-gray-3;
+    .navbar-brand{
+        flex-grow: 1;
+        img{
+            width: 110px;
+        }
+    }
+    .category{
+        flex-grow: 1;
+        align-self: center;
+        a{
+            // color: $color-black-light;
+            // font-size: $fs-1;
+            @include text($color-black-light, $fs-1, $fw-normal);
+            text-decoration: none;
+        }
+        
+    }
+    .input_search{
+        flex-grow: 5;
+        .form-control{
+            background-color: $color-gray-1;
+            font-size: $fs-1;
+            padding: $pd-1 $pd-2;
+            border: none;
+            transition:0s;
+            -webkit-transition:0s;
+            -moz-transition:0s;
+            -ms-transition:0s;
+            -o-transition:0s;
+            &:focus{
+                box-shadow: none;
+                border-left: 1px solid $color-gray-3;
+                border-top: 1px solid $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+            }
+            &:focus + .input-group-prepend{
+                .input-group-text{
+                    border-right: 1px solid $color-gray-3;
+                    border-top: 1px solid $color-gray-3;
+                    border-bottom: 1px solid $color-gray-3;
+                }
+            }
+        }
+        .input-group-prepend{
+            .input-group-text{
+                color: $color-red-0;
+                border: none;
+                background: $color-gray-1;
+            }  
+            &:hover{
+                .input-group-text{
+                    background-color: $color-red-0;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                @include text($color-black-light, $fs-1, $fw-normal);
+                padding: $pd-1 $pd-2; 
+            }
+            &:hover{
+                .nav-link{
+                    background-color: $color-gray-1;
+                }
+            }
+        }
+        .nav-item:nth-child(3){
+            .nav-link{
+                border-radius: 50%        ;
+                -webkit-border-radius: 50%        ;
+                -moz-border-radius: 50%        ;
+                -ms-border-radius: 50%        ;
+                -o-border-radius: 50%        ;
+            }
+        }
+        .nav-item:last-child{
+            .btn--white{
+                @include button($color-gray-4, $color-white-0, $color-black-0, $color-black-0, $color-white-0 );
+            }
+            .btn--red{
+                @include button($color-white-0, $color-red-0, transparent, $color-white-0, $color-red-1 );
+            }
+        }
+    }
+}

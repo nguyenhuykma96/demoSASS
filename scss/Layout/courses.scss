@@ -1,0 +1,115 @@
+.courses{
+    .courses_title{
+        padding: 100px 0;
+        h1{
+            @include text($color-black-0, $fs-4 - 4, $fw-bold-0);
+        }
+    }
+    .myNav{
+        border-bottom: none;
+        .nav-item{
+            .nav-link{
+                @include text($color-black-0, $fs-0, $fw-normal);
+                &:hover{
+                    border: none;
+                }
+                &.active{
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-bottom: 5px solid $color-blue;
+                }
+            }
+        }  
+    }
+    .myTabContent{
+        position: relative;
+        .owl-prev{
+            position: absolute;
+            top: 40%;
+            left: -30px;
+            width: 45px;
+            height: 45px;
+            border-radius:50%;
+            font-size: $fs-4;
+            color: $color-blue;
+            -webkit-border-radius:50%;
+            -moz-border-radius:50%;
+            -ms-border-radius:50%;
+            -o-border-radius:50%;
+            box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1); 
+            background-color: $color-white-0 !important;
+            z-index: 3;
+            
+            span{
+                color: $color-blue;
+                font-size: $fs-4;
+                line-height: 30px;
+            }
+        }
+        .owl-next{
+            position: absolute;
+            top: 40%;
+            right: -30px;
+            width: 45px;
+            height: 45px;
+            border-radius:50%;
+            font-size: $fs-4;
+            color: $color-blue;
+            -webkit-border-radius:50%;
+            -moz-border-radius:50%;
+            -ms-border-radius:50%;
+            -o-border-radius:50%;
+            box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1); 
+            background-color: $color-white-0 !important;
+            z-index: 3;
+            
+            span{
+                color: $color-blue;
+                font-size: $fs-4;
+                line-height: 30px;
+            }
+        }
+        .card{
+            .card-title{
+                @include text($color-black-0, $fs-0, $fw-bold-0);
+                display: -webkit-box ;
+                display: -moz-block;
+                // box-orient: vertical;
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                min-height: 20px;
+                -webkit-line-clamp: 2;
+                -moz-line-clamp: 2;
+                white-space: nowrap;
+                
+            }
+            .card-text{
+                @include text($color-gray-4, $fs-1, $fw-normal);
+            }
+            .rating{
+                i{
+                    @include text($color-yellow, $fs-1, $fw-normal);
+                }
+                span:nth-child(6){
+                    @include text($color-gray-4, $fs-1, $fw-bold);
+                }
+                span:last-child{
+                    @include text($color-gray-4, $fs-1, $fw-bold);
+                }
+            }
+            p:last-child{
+                margin-bottom: 0;
+                span:first-child{
+                    @include text($color-gray-4, $fs-0, $fw-normal);
+                    text-decoration: line-through;
+                }
+                span:last-child{
+                    @include text($color-black-0, $fs-0, $fw-bold);
+                }
+            }
+        }
+    }
+}
